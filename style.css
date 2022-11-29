@@ -39,6 +39,7 @@ ul {
     box-shadow: 5px 5px 5px 5px white;
     width: 500px;
 }
+
 .main_container {
     display: flex;
     flex-direction: column;
@@ -62,8 +63,11 @@ ul {
 .main_child3{
     text-align: center;
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 15px;
     font-family: 'neon1';
+}
+.main_child3 > li {
+    margin-bottom: 20px;
 }
 nav a:hover {
     color : black;
