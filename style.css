@@ -1,49 +1,73 @@
-html {
-    font-size: 100%
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Pen+Script&display=swap');
+@font-face {
+    font-family: 'neon';
+    src: url('./NaverNanumSquareNeo/TTF/NanumSquareNeo-eHv.ttf') format('truetype');
 }
-body {
-    text-align: center;
-    grid-template-areas: 
-    "fb_up"
-    "left-space sidebar right-space"
-    "fb_down";
-    gap: 100px;
+@font-face {
+    font-family: 'neon1';
+    src: url('./NaverNanumSquareNeo/TTF/NanumSquareNeo-aLt.ttf') format('truetype');
 }
-body::after {
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url("https://i.pinimg.com/564x/d7/1b/03/d71b0357c3ac205b9c75c2a055fcf43e.jpg");
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.8;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.7);
-}
-.sidebar {
-    margin-top: 100px;
-    grid-area: sidebar;
-}
-.fb_up {
-    grid-area: fb_up;
-}
-.fb_down{
-    grid-area: fb_down;
-}
-ul {
-    list-style:none;
-}
- a {
-    color: black;
-    text-decoration: none;
-    margin-bottom: 10px;
+#main_page {
+    position: relative;;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width:100%;
+    height:100%;
+    z-index: 1;
+
 }
 
-nav > h1 {
-    margin: 0;
-    padding-bottom: 0.5rem;
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+
+.sns-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.sns {
+    padding: 0px 10px;
+}
+#main_ {
+    position: absolute;
+    padding: 10px 0px;
+    background-color: rgba(60, 60, 60, 0.5);
+    box-shadow: 5px 5px 5px 5px white;
+    width: 800px;
+}
+.main_container {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+
+}
+.main_child1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 1px;
+    font-family: 'neon';
+}
+.main_child2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.main_child3{
+    text-align: center;
+    margin-right: 50px;
+    font-size: 30px;
+    font-family: 'neon1';
+}
+nav a:hover {
+    color : black;
+    transition : 1s;
+    text-decoration: underline;
 }

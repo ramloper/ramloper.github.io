@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <title>테스트해봄~!</title>
+    <title>Rami`s blog</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://kit.fontawesome.com/9a1ffd4936.js" crossorigin="anonymous"></script>
+    <script>
+        function dp_menu(){
+            let click = document.getElementById("dropdown-content");
+            if(click.style.display === "none"){
+                click.style.display = "block";
+ 
+            }else{
+                click.style.display = "none";
+ 
+            }
+        }
+    </script>
 </head>
-<body>
-  <header>
-    <div class="fb_up"></div>
-    <div class="sidebar">
-      <h1><a href="index.html"> Rami`s Tech Blog</a></h1>
-      <h2>"I`m back-end Developer"</h2>
-      <ul>
-        <li>Home</li>
-        <li>Tech Blog</li>
-        <li>Diary</li>
-        <li>About</li>
-      </ul>
-    </div>
-    <div class="fb_down"></div>
-  </header>
+<body id="main_page">
+    <header>
+        <ul class="sns-container">
+            <li class="sns"><a>
+                <i class="fa-solid fa-envelope" id="dropdown" onclick="dp_menu()"></i></a>
+                    <div style="display: none; align='right';" id="dropdown-content">rla7360@gmail.com</div>
+            </li>
+            <li class="sns"><a href="https://instagram.com/woo_ram0?igshid=YTY2NzY3YTc=">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+            <li class="sns"><a href="https://github.com/zerami372">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+        </ul>
+    </header>
+    <nav id="main_" class="main_container">
+        <h1 class="main_child1">Tech Blog</h1>
+        <p class="main_child2">"Back-end Developer"</p>
+        <ul class="main_child3">
+            <li><a href="./index.html">Home</a> </li>
+            <li><a href="./Tech blog.html">Tech blog</a></li>
+            <li><a href="./Diary.html">Diary</a></li>
+            <li><a href="./About.html">About</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
